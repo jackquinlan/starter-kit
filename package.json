@@ -4,7 +4,7 @@
     "private": true,
     "author": {
         "name": "jackquinlan",
-        "url":  "https://twitter.com/johnquinlanjr"
+        "url": "https://twitter.com/johnquinlanjr"
     },
     "scripts": {
         "clean": "rm -rf .next && rm -rf node_modules",
@@ -16,6 +16,7 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@prisma/client": "^4.14.1",
         "clsx": "^1.2.1",
         "next": "13.4.2",
         "react": "18.2.0",
@@ -37,6 +38,7 @@
         "postcss": "^8.4.23",
         "prettier": "^2.8.8",
         "prettier-plugin-tailwindcss": "^0.3.0",
+        "prisma": "^4.14.1",
         "tailwindcss": "^3.3.2",
         "typescript": "^5.0.4"
     }
