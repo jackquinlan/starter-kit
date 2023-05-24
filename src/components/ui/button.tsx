@@ -4,7 +4,7 @@ import clsx from "clsx";
 import { ButtonOrLink, Props } from "@/components/ui/button-or-link";
 
 type BUTTON_SIZE = "sm" | "md" | "lg";
-type BUTTON_VARIANT = "brand" | "outline" | "link";
+type BUTTON_VARIANT = "brand" | "ghost" | "outline" | "link";
 
 export type ButtonThemeProps = {
     size?: BUTTON_SIZE;
@@ -21,9 +21,10 @@ const classes = {
     },
     variant: {
         brand: "text-white bg-brand-500 hover:bg-brand-600",
+        ghost: "hover:bg-accent hover:text-accent-foreground",
         outline:
             "border border-input hover:bg-accent hover:text-accent-foreground",
-        link: "underline-offset-4 hover:underline text-primary",
+        link: "underline-offset-4 font-light underline text-primary",
     },
 };
 
