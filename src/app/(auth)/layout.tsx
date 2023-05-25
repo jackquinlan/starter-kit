@@ -15,7 +15,7 @@ export default function AuthLayout({ children }: AuthLayoutProps) {
                     Back
                 </Button>
             </div>
-            <main className="flex-1 mx-auto pt-16">{children}</main>
+            <main className="flex-1 mx-auto">{children}</main>
             <Footer />
         </div>
     );
